@@ -10,25 +10,21 @@ public class BaseTests {
     private WebDriver driver;
     protected HomePage homePage;
 
-    private String url = "https://nimbleapproach.com/";
-
     @BeforeClass
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
         driver = new ChromeDriver();
-        driver.get(url);
-        goHome();
-
-        homePage = new HomePage(driver);
+        driver.manage().window().maximize();
     }
 
     @BeforeMethod
     public void goHome(){
-        driver.get(url);
+        driver.get("https://nimbleapproach.com/");
+        homePage = new HomePage(driver);
     }
 
     @AfterClass
-    public  void tearDown() {
+    public void tearDown() {
         driver.quit();
     }
 }

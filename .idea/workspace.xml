@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ContactUsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ContactUsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/contactus/ContactUsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactus/ContactUsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +49,25 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ContactUsTest.testContactUsForm">
+  <component name="RunManager" selected="TestNG.ContactUsTest.testCompletedContactUsForm">
+    <configuration name="ContactUsTest.testCompletedContactUsForm" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nimble-ui-automation-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="contactus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="contactus" />
+      <option name="MAIN_CLASS_NAME" value="contactus.ContactUsTest" />
+      <option name="METHOD_NAME" value="testCompletedContactUsForm" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ContactUsTest.testContactUsForm" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nimble-ui-automation-java" />
       <extension name="coverage">
@@ -60,6 +79,24 @@
       <option name="PACKAGE_NAME" value="contactus" />
       <option name="MAIN_CLASS_NAME" value="contactus.ContactUsTest" />
       <option name="METHOD_NAME" value="testContactUsForm" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactUsTest.textInCompleteContactUsForm" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nimble-ui-automation-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="contactus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="contactus" />
+      <option name="MAIN_CLASS_NAME" value="contactus.ContactUsTest" />
+      <option name="METHOD_NAME" value="textInCompleteContactUsForm" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -104,6 +141,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ContactUsTest.testCompletedContactUsForm" />
+        <item itemvalue="TestNG.ContactUsTest.textInCompleteContactUsForm" />
         <item itemvalue="TestNG.ContactUsTest.testContactUsForm" />
         <item itemvalue="TestNG.WhatWeDoTests.testWhatWeDoPageOpens" />
         <item itemvalue="TestNG.WhatWeDoTests" />

@@ -2,8 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.tracing.Span;
-import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.WebElement;
 
 public class ContactUsPage {
 
@@ -11,9 +10,12 @@ public class ContactUsPage {
     private By nameField = By.cssSelector("input[placeholder='Name*']");
     private By organisationField = By.cssSelector("input[placeholder='Organisation Name']");
     private By emailField = By.cssSelector("input[placeholder='Company Email*']");
-    private By dropdown = By.className("select2-selection__arrow");
+    private By dropdownArrow = By.className("select2-selection--single");
+    private By dropdownOption = By.xpath("//li[text()='Improve a product or service']");
+    private By dropdownText = By.className("select2-selection__rendered");
     private By findUsField = By.cssSelector("input[placeholder='How did you find us?']");
     private By messageField = By.cssSelector("[placeholder='Message*']");
+    private By submitButton = By.className("wpcf7-submit");
 
 
     public ContactUsPage(WebDriver driver) {
@@ -44,16 +46,13 @@ public class ContactUsPage {
         return driver.findElement(emailField).getText();
     }
 
-    private Select findDropDownElement() {
-        return new Select(driver.findElement(dropdown));
-    }
-
-    public void selectFromDropDown(String option) {
-        findDropDownElement().selectByVisibleText(option);
+    public void selectDropdownOption() {
+        driver.findElement(dropdownArrow).click();
+        driver.findElement(dropdownOption).click();
     }
 
     public String getDropDownSet() {
-        return driver.findElement(dropdown).getText();
+        return driver.findElement(dropdownText).getText();
     }
 
     public void setFindUs(String text) {
@@ -70,5 +69,12 @@ public class ContactUsPage {
 
     public String getMessageSet() {
         return driver.findElement(messageField).getText();
+    }
+
+    public void clickSubmitButton() {
+        WebElement submitButton = driver.findElement(By.className("wpcf7-submit"));
+        if (submitButton.isDisplayed()) {
+            submitButton.click();
+        }
     }
 }
