@@ -6,7 +6,12 @@ import pages.ContactUsPage;
 
 import static org.testng.Assert.assertEquals;
 
-public class ContactUsTest extends BaseTests {
+public class ContactUsTests extends BaseTests {
+
+    @Test
+    public void testContactUsPageOpens() {
+        // TODO
+    }
 
     @Test
     public void testCompletedContactUsForm() {

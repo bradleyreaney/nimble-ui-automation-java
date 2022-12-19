@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e092ede-a577-443b-997a-abf8937781ff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/home/HomeTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ContactUsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ContactUsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/contactus/ContactUsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactus/ContactUsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/contactus/ContactUsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactus/ContactUsTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +49,8 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ContactUsTest.testCompletedContactUsForm">
-    <configuration name="ContactUsTest.testCompletedContactUsForm" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.HomeTests">
+    <configuration name="ContactUsTests.testCompletedContactUsForm" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nimble-ui-automation-java" />
       <extension name="coverage">
         <pattern>
@@ -58,7 +59,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="contactus" />
-      <option name="MAIN_CLASS_NAME" value="contactus.ContactUsTest" />
+      <option name="MAIN_CLASS_NAME" value="contactus.ContactUsTests" />
       <option name="METHOD_NAME" value="testCompletedContactUsForm" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -67,7 +68,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactUsTest.testContactUsForm" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactUsTests.textInCompleteContactUsForm" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nimble-ui-automation-java" />
       <extension name="coverage">
         <pattern>
@@ -76,25 +77,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="contactus" />
-      <option name="MAIN_CLASS_NAME" value="contactus.ContactUsTest" />
-      <option name="METHOD_NAME" value="testContactUsForm" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContactUsTest.textInCompleteContactUsForm" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nimble-ui-automation-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="contactus.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="contactus" />
-      <option name="MAIN_CLASS_NAME" value="contactus.ContactUsTest" />
+      <option name="MAIN_CLASS_NAME" value="contactus.ContactUsTests" />
       <option name="METHOD_NAME" value="textInCompleteContactUsForm" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -103,16 +86,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WhatWeDoTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nimble-ui-automation-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="whatwedo.*" />
+          <option name="PATTERN" value="home.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="whatwedo" />
-      <option name="MAIN_CLASS_NAME" value="whatwedo.WhatWeDoTests" />
+      <option name="PACKAGE_NAME" value="home" />
+      <option name="MAIN_CLASS_NAME" value="home.HomeTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -120,17 +103,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WhatWeDoTests.testWhatWeDoPageOpens" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeTests.testContactInfo" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nimble-ui-automation-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="whatwedo.*" />
+          <option name="PATTERN" value="home.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="whatwedo" />
-      <option name="MAIN_CLASS_NAME" value="whatwedo.WhatWeDoTests" />
-      <option name="METHOD_NAME" value="testWhatWeDoPageOpens" />
+      <option name="PACKAGE_NAME" value="home" />
+      <option name="MAIN_CLASS_NAME" value="home.HomeTests" />
+      <option name="METHOD_NAME" value="testContactInfo" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomeTests.testMenuLinksList" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nimble-ui-automation-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="home.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="home" />
+      <option name="MAIN_CLASS_NAME" value="home.HomeTests" />
+      <option name="METHOD_NAME" value="testMenuLinksList" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -140,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ContactUsTest.testCompletedContactUsForm" />
-        <item itemvalue="TestNG.ContactUsTest.textInCompleteContactUsForm" />
-        <item itemvalue="TestNG.ContactUsTest.testContactUsForm" />
-        <item itemvalue="TestNG.WhatWeDoTests.testWhatWeDoPageOpens" />
-        <item itemvalue="TestNG.WhatWeDoTests" />
+        <item itemvalue="TestNG.HomeTests" />
+        <item itemvalue="TestNG.HomeTests.testContactInfo" />
+        <item itemvalue="TestNG.HomeTests.testMenuLinksList" />
+        <item itemvalue="TestNG.ContactUsTests.testCompletedContactUsForm" />
+        <item itemvalue="TestNG.ContactUsTests.textInCompleteContactUsForm" />
       </list>
     </recent_temporary>
   </component>
