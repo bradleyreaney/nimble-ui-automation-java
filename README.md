@@ -8,4 +8,4 @@ To run the tests you can user the command `mvn test`
 
 - [ ] `testCompletedContactUsForm` - Find a way of returning text from the fields for the assertion
 - [ ] `textInCompleteContactUsForm` - Fix being able to click the 'Submit' button
-- [ ] `testIncorrectEmailFormat` - Write the test
+- [ ] `testIncorrectEmailFormat` - Blocked by `textInCompleteContactUsForm` submit button issue

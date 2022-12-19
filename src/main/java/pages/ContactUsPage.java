@@ -16,6 +16,8 @@ public class ContactUsPage {
     private By findUsField = By.cssSelector("input[placeholder='How did you find us?']");
     private By messageField = By.cssSelector("[placeholder='Message*']");
     private By submitButton = By.className("wpcf7-submit");
+    private By emailFormatErrorMessage = By.className("wpcf7-not-valid-tip");
+    private By incompleteFormErrorMessage = By.className("wpcf7-response-output");
 
 
     public ContactUsPage(WebDriver driver) {
@@ -76,5 +78,13 @@ public class ContactUsPage {
         if (submitButton.isDisplayed()) {
             submitButton.click();
         }
+    }
+
+    public String getEmailFormatErrorMessage() {
+        return driver.findElement(emailFormatErrorMessage).getText();
+    }
+
+    public String getIncompleteFormErrorMessage() {
+        return driver.findElement(incompleteFormErrorMessage).getText();
     }
 }
