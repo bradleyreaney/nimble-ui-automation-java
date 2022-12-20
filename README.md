@@ -29,6 +29,6 @@ To run the tests you can user the command `mvn test`
 
 #### Contact us page
 - [ ] `testContactUsPageOpens` - TODO
-- [ ] `testCompletedContactUsForm` - Find a way of returning text from the fields for the assertion
+- [X] `testCompletedContactUsForm` - Find a way of returning text from the fields for the assertion
 - [ ] `textInCompleteContactUsForm` - Fix being able to click the 'Submit' button
 - [ ] `testIncorrectEmailFormat` - Blocked by `textInCompleteContactUsForm` submit button issue

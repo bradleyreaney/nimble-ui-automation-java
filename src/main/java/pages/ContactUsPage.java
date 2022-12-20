@@ -29,7 +29,7 @@ public class ContactUsPage {
     }
 
     public String getNameSet() {
-        return driver.findElement(nameField).getText();
+        return driver.findElement(nameField).getAttribute("value");
     }
 
     public void setOrganisation(String text) {
@@ -37,7 +37,7 @@ public class ContactUsPage {
     }
 
     public String getOrganisationSet() {
-        return driver.findElement(organisationField).getText();
+        return driver.findElement(organisationField).getAttribute("value");
     }
 
     public void setEmail(String text) {
@@ -45,7 +45,7 @@ public class ContactUsPage {
     }
 
     public String getEmailSet() {
-        return driver.findElement(emailField).getText();
+        return driver.findElement(emailField).getAttribute("value");
     }
 
     public void selectDropdownOption() {
@@ -62,7 +62,7 @@ public class ContactUsPage {
     }
 
     public String getFindUsSet() {
-        return driver.findElement(findUsField).getText();
+        return driver.findElement(findUsField).getAttribute("value");
     }
 
     public void setMessage(String text) {
@@ -70,7 +70,7 @@ public class ContactUsPage {
     }
 
     public String getMessageSet() {
-        return driver.findElement(messageField).getText();
+        return driver.findElement(messageField).getAttribute("value");
     }
 
     public void clickSubmitButton() {
