@@ -1,6 +1,7 @@
 package contactus;
 
 import base.BaseTests;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import pages.ContactUsPage;
 
@@ -11,8 +12,9 @@ public class ContactUsTests extends BaseTests {
 
     @Test
     public void testContactUsPageOpens() {
-        // TODO Check page title
-        // TODO Check element on page
+        ContactUsPage contactUsPage = homePage.clickContactUs();
+        assertEquals(contactUsPage.getContactUsPageTitle(), "Contact Us - Nimble Approach");
+        assertEquals(contactUsPage.getContactUsPageHeading(), "Contact us.");
     }
 
     @Test
@@ -24,20 +26,19 @@ public class ContactUsTests extends BaseTests {
         contactUsPage.selectDropdownOption();
         contactUsPage.setFindUs("Google");
         contactUsPage.setMessage("This is a message");
-        assertEquals(contactUsPage.getNameSet(), "Brad Reaney", "Error, Name not set.");
-        assertEquals(contactUsPage.getOrganisationSet(), "Brad Corp", "Error, Email not set.");
-        assertEquals(contactUsPage.getEmailSet(), "bradley.reaney@nimbleapproach.com", "Error, Email not set.");
-        assertEquals(contactUsPage.getDropDownSet(), "Improve a product or service", "Error, Dropdown not set");
-        assertEquals(contactUsPage.getFindUsSet(), "Google", "Error, Find us not set");
-        assertEquals(contactUsPage.getMessageSet(), "This is a message", "Error, Message not set");
+        assertEquals(contactUsPage.getNameSet(), "Brad Reaney");
+        assertEquals(contactUsPage.getOrganisationSet(), "Brad Corp");
+        assertEquals(contactUsPage.getEmailSet(), "bradley.reaney@nimbleapproach.com");
+        assertEquals(contactUsPage.getDropDownSet(), "Improve a product or service");
+        assertEquals(contactUsPage.getFindUsSet(), "Google");
+        assertEquals(contactUsPage.getMessageSet(), "This is a message");
     }
 
     @Test
     public void testInCompleteContactUsForm() {
         ContactUsPage contactUsPage = homePage.clickContactUs();
         contactUsPage.clickSubmitButton();
-        assertTrue(contactUsPage.incompleteFormErrorMessageIsDisplayed(),
-                "Error, Incomplete form error message not displayed");
+        assertTrue(contactUsPage.incompleteFormErrorMessageIsDisplayed());
     }
 
     @Test
@@ -47,7 +48,6 @@ public class ContactUsTests extends BaseTests {
         contactUsPage.setEmail("wrongemailformat.com");
         contactUsPage.setMessage("This is a message");
         contactUsPage.clickSubmitButton();
-        assertTrue(contactUsPage.emailFormatErrorMessageIsDisplayed(),
-                "Error, eMail format error message not displayed");
+        assertTrue(contactUsPage.emailFormatErrorMessageIsDisplayed());
     }
 }

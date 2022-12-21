@@ -15,4 +15,8 @@ public class WhatWeDoPage {
     public String getWhatWeDoText() {
         return driver.findElement(whatWeDoText).getText();
     }
+
+    public String getWhatWeDoPageTitle() {
+        return driver.getTitle();
+    }
 }

@@ -19,6 +19,7 @@ public class ContactUsPage {
     private By dropdownText = By.className("select2-selection__rendered");
     private By findUsField = By.cssSelector("input[placeholder='How did you find us?']");
     private By messageField = By.cssSelector("[placeholder='Message*']");
+    private By pageHeading = By.cssSelector("h1");
 
     public ContactUsPage(WebDriver driver) {
         this.driver = driver;
@@ -93,5 +94,13 @@ public class ContactUsPage {
         return new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.textToBePresentInElement(
                         emailFormatErrorMessage, "The e-mail address entered is invalid."));
+    }
+
+    public String getContactUsPageTitle() {
+        return driver.getTitle();
+    }
+
+    public String getContactUsPageHeading() {
+        return driver.findElement(pageHeading).getText();
     }
 }

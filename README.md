@@ -2,8 +2,6 @@
 
 This is a demo of writing automated tests on the Nimble website using Java and Selenium.
 
-To run the tests you can user the command `mvn test`
-
 ## TODO
 
 #### Home page
@@ -12,7 +10,7 @@ To run the tests you can user the command `mvn test`
 - [x] `testSocialMediaLinks`
 
 #### What we do page
-- [ ] `testWhatWeDoPageOpens` - Check page title
+- [x] `testWhatWeDoPageOpens`
 - [ ] Add more tests
 
 #### Success stories page
@@ -28,7 +26,10 @@ To run the tests you can user the command `mvn test`
 - [ ] TODO
 
 #### Contact us page
-- [ ] `testContactUsPageOpens` - TODO
-- [X] `testCompletedContactUsForm` - Find a way of returning text from the fields for the assertion
-- [x] `textInCompleteContactUsForm` - Fix being able to click the 'Submit' button
-- [x] `testIncorrectEmailFormat` - Blocked by `textInCompleteContactUsForm` submit button issue
+- [X] `testContactUsPageOpens`
+- [X] `testCompletedContactUsForm`
+- [x] `textInCompleteContactUsForm`
+- [x] `testIncorrectEmailFormat`
+
+#### Other
+- [ ] Fix any tests that don't work in headless mode (List TBC)
