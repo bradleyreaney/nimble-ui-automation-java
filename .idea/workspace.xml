@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0e092ede-a577-443b-997a-abf8937781ff" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ContactUsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ContactUsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/WhatWeDoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/WhatWeDoPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/contactus/ContactUsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactus/ContactUsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/whatwedo/WhatWeDoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/whatwedo/WhatWeDoTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +46,7 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.WhatWeDoTests.testWhatWeDoPageOpens">
+  <component name="RunManager" selected="TestNG.ContactUsTests.testCompletedContactUsForm">
     <configuration name="ContactUsTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nimble-ui-automation-java" />
       <extension name="coverage">
@@ -69,6 +64,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ContactUsTests.testCompletedContactUsForm" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nimble-ui-automation-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="contactus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="contactus" />
+      <option name="MAIN_CLASS_NAME" value="contactus.ContactUsTests" />
+      <option name="METHOD_NAME" value="testCompletedContactUsForm" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ContactUsTests.testContactUsPageOpens" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nimble-ui-automation-java" />
       <extension name="coverage">
@@ -80,24 +93,6 @@
       <option name="PACKAGE_NAME" value="contactus" />
       <option name="MAIN_CLASS_NAME" value="contactus.ContactUsTests" />
       <option name="METHOD_NAME" value="testContactUsPageOpens" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContactUsTests.testInCompleteContactUsForm" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nimble-ui-automation-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="contactus.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="contactus" />
-      <option name="MAIN_CLASS_NAME" value="contactus.ContactUsTests" />
-      <option name="METHOD_NAME" value="testInCompleteContactUsForm" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -143,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ContactUsTests.testCompletedContactUsForm" />
         <item itemvalue="TestNG.WhatWeDoTests.testWhatWeDoPageOpens" />
         <item itemvalue="TestNG.ContactUsTests" />
         <item itemvalue="TestNG.ContactUsTests.testContactUsPageOpens" />
         <item itemvalue="TestNG.ContactUsTests.testIncorrectEmailFormat" />
-        <item itemvalue="TestNG.ContactUsTests.testInCompleteContactUsForm" />
       </list>
     </recent_temporary>
   </component>

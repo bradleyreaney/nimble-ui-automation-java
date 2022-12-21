@@ -21,16 +21,16 @@ public class ContactUsTests extends BaseTests {
     public void testCompletedContactUsForm() {
         ContactUsPage contactUsPage = homePage.clickContactUs();
         contactUsPage.setName("Brad Reaney");
-        contactUsPage.setOrganisation("Brad Corp");
-        contactUsPage.setEmail("bradley.reaney@nimbleapproach.com");
-        contactUsPage.selectDropdownOption();
-        contactUsPage.setFindUs("Google");
-        contactUsPage.setMessage("This is a message");
         assertEquals(contactUsPage.getNameSet(), "Brad Reaney");
+        contactUsPage.setOrganisation("Brad Corp");
         assertEquals(contactUsPage.getOrganisationSet(), "Brad Corp");
+        contactUsPage.setEmail("bradley.reaney@nimbleapproach.com");
         assertEquals(contactUsPage.getEmailSet(), "bradley.reaney@nimbleapproach.com");
+        contactUsPage.selectDropdownOption();
         assertEquals(contactUsPage.getDropDownSet(), "Improve a product or service");
+        contactUsPage.setFindUs("Google");
         assertEquals(contactUsPage.getFindUsSet(), "Google");
+        contactUsPage.setMessage("This is a message");
         assertEquals(contactUsPage.getMessageSet(), "This is a message");
     }
 
