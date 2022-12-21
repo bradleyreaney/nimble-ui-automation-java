@@ -12,7 +12,7 @@ To run the tests you can user the command `mvn test`
 - [x] `testSocialMediaLinks`
 
 #### What we do page
-- [x] `testWhatWeDoPageOpens`
+- [ ] `testWhatWeDoPageOpens` - Check page title
 - [ ] Add more tests
 
 #### Success stories page
@@ -30,5 +30,5 @@ To run the tests you can user the command `mvn test`
 #### Contact us page
 - [ ] `testContactUsPageOpens` - TODO
 - [X] `testCompletedContactUsForm` - Find a way of returning text from the fields for the assertion
-- [ ] `textInCompleteContactUsForm` - Fix being able to click the 'Submit' button
-- [ ] `testIncorrectEmailFormat` - Blocked by `textInCompleteContactUsForm` submit button issue
+- [x] `textInCompleteContactUsForm` - Fix being able to click the 'Submit' button
+- [x] `testIncorrectEmailFormat` - Blocked by `textInCompleteContactUsForm` submit button issue

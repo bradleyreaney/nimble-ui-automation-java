@@ -17,11 +17,11 @@ public class HomePage {
     private By facebookLink = By.className("fa-facebook");
     private By linkedinLink = By.className("fa-linkedin");
 
-    public HomePage(WebDriver driver){
+    public HomePage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public void clickLink(String linkText){
+    public void clickLink(String linkText) {
         driver.findElement(By.linkText(linkText)).click();
     }
 

@@ -11,6 +11,7 @@ public class WhatWeDoTests extends BaseTests {
     @Test
     public void testWhatWeDoPageOpens() {
         WhatWeDoPage whatWeDoPage = homePage.clickWhatWeDo();
+        // TODO check page title
         assertEquals(whatWeDoPage.getWhatWeDoText(), "What we do");
     }
 }

@@ -1,8 +1,12 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
 
 public class ContactUsPage {
 
@@ -15,10 +19,6 @@ public class ContactUsPage {
     private By dropdownText = By.className("select2-selection__rendered");
     private By findUsField = By.cssSelector("input[placeholder='How did you find us?']");
     private By messageField = By.cssSelector("[placeholder='Message*']");
-    private By submitButton = By.className("wpcf7-submit");
-    private By emailFormatErrorMessage = By.className("wpcf7-not-valid-tip");
-    private By incompleteFormErrorMessage = By.className("wpcf7-response-output");
-
 
     public ContactUsPage(WebDriver driver) {
         this.driver = driver;
@@ -75,16 +75,23 @@ public class ContactUsPage {
 
     public void clickSubmitButton() {
         WebElement submitButton = driver.findElement(By.className("wpcf7-submit"));
-        if (submitButton.isDisplayed()) {
-            submitButton.click();
-        }
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("arguments[0].scrollIntoView();", submitButton);
+        new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(submitButton));
+        jse.executeScript("arguments[0].click();", submitButton);
     }
 
-    public String getEmailFormatErrorMessage() {
-        return driver.findElement(emailFormatErrorMessage).getText();
+    public boolean incompleteFormErrorMessageIsDisplayed() {
+        WebElement incompleteFormErrorMessage = driver.findElement(By.className("wpcf7-response-output"));
+        return new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.textToBePresentInElement(
+                        incompleteFormErrorMessage, "One or more fields have an error. Please check and try again."));
     }
 
-    public String getIncompleteFormErrorMessage() {
-        return driver.findElement(incompleteFormErrorMessage).getText();
+    public boolean emailFormatErrorMessageIsDisplayed() {
+        WebElement emailFormatErrorMessage = driver.findElement(By.className("wpcf7-not-valid-tip"));
+        return new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.textToBePresentInElement(
+                        emailFormatErrorMessage, "The e-mail address entered is invalid."));
     }
 }

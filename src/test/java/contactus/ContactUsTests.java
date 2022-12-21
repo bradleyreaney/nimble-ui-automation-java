@@ -5,12 +5,14 @@ import org.testng.annotations.Test;
 import pages.ContactUsPage;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class ContactUsTests extends BaseTests {
 
     @Test
     public void testContactUsPageOpens() {
-        // TODO
+        // TODO Check page title
+        // TODO Check element on page
     }
 
     @Test
@@ -34,7 +36,8 @@ public class ContactUsTests extends BaseTests {
     public void testInCompleteContactUsForm() {
         ContactUsPage contactUsPage = homePage.clickContactUs();
         contactUsPage.clickSubmitButton();
-        assertEquals(contactUsPage.getIncompleteFormErrorMessage(), "One or more fields have an error. Please check and try again.", "Error, Incomplete form error message incorrect");
+        assertTrue(contactUsPage.incompleteFormErrorMessageIsDisplayed(),
+                "Error, Incomplete form error message not displayed");
     }
 
     @Test
@@ -44,6 +47,7 @@ public class ContactUsTests extends BaseTests {
         contactUsPage.setEmail("wrongemailformat.com");
         contactUsPage.setMessage("This is a message");
         contactUsPage.clickSubmitButton();
-        assertEquals(contactUsPage.getEmailFormatErrorMessage(), "The e-mail address entered is invalid.", "Error, eMail format error message incorrect");
+        assertTrue(contactUsPage.emailFormatErrorMessageIsDisplayed(),
+                "Error, eMail format error message not displayed");
     }
 }
