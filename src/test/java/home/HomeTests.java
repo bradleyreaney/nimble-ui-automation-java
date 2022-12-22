@@ -24,6 +24,11 @@ public class HomeTests extends BaseTests {
     }
 
     @Test
+    public void testSubMenuLinks() {
+        //TODO
+    }
+
+    @Test
     public void testContactInfo() {
         assertEquals(homePage.getContactEmail(), "info@nimbleapproach.com", "Error, Contact eMail incorrect");
         assertEquals(homePage.getContactTelephone(), "+44) 0 114 345 0540", "Error, Contact telephone incorrect");

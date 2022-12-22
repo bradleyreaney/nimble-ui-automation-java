@@ -14,4 +14,8 @@ public class WhatWeDoTests extends BaseTests {
         assertEquals(whatWeDoPage.getWhatWeDoPageTitle(), "What we do - Nimble Approach");
         assertEquals(whatWeDoPage.getWhatWeDoText(), "What we do");
     }
+
+    @Test void testClickingTestingTile() {
+        //TODO
+    }
 }

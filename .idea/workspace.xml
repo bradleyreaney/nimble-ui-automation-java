@@ -7,8 +7,12 @@
     <list default="true" id="0e092ede-a577-443b-997a-abf8937781ff" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/aboutnimble/AboutNimbleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/aboutnimble/AboutNimbleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/blog/BlogsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/blog/BlogsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/careers/CareersTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/careers/CareersTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/home/HomeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/home/HomeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/successstories/SuccessStoriesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/successstories/SuccessStoriesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/whatwedo/WhatWeDoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/whatwedo/WhatWeDoTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

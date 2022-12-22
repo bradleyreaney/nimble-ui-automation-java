@@ -13,4 +13,14 @@ public class AboutNimbleTests extends BaseTests {
         AboutNimblePage aboutNimblePage = homePage.clickAboutNimble();
         assertEquals(aboutNimblePage.getAboutNimblePageTitle(), "About Nimble - Nimble Approach");
     }
+
+    @Test
+    public void testEveryoneTileHEadings() {
+        //TODO
+    }
+
+    @Test
+    public void testSeeWhatWeDoLink() {
+        //TODO
+    }
 }

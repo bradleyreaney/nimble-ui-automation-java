@@ -13,4 +13,9 @@ public class SuccessStoriesTests extends BaseTests {
         SuccessStoriesPage successStoriesPage = homePage.clickSuccessStories();
         assertEquals(successStoriesPage.getSuccessStoriesPageTitle(), "Success Stories - Nimble Approach");
     }
+
+    @Test
+    public void testClickingSBGTile() {
+        //TODO
+    }
 }

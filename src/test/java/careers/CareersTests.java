@@ -13,4 +13,24 @@ public class CareersTests extends BaseTests {
         CareersPage careersPage = homePage.clickCareers();
         assertEquals(careersPage.getCareersPageTitle(), "Careers - Nimble Approach");
     }
+
+    @Test
+    public void testJumpToAvailableRolesLink() {
+        //TODO
+    }
+
+    @Test
+    public void testCareerButton() {
+        //TODO
+    }
+
+    @Test
+    public void testWhatWeOffer() {
+        //TODO
+    }
+
+    @Test
+    public void testCopDropDown() {
+        //TODO
+    }
 }
