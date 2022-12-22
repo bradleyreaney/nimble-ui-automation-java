@@ -4,8 +4,8 @@ This is a demo of writing automated tests on the Nimble website using Java and S
 
 ## TODO
 
-#### Home page
-- [ ] `testHomePageOpens` - Add find element test
+#### Home page - DONE
+- [x] `testHomePageOpens`
 - [x] `testMenuLinksList`
 - [x] `testContactInfo`
 - [x] `testSocialMediaLinks`

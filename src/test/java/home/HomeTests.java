@@ -11,6 +11,7 @@ public class HomeTests extends BaseTests {
     @Test
     public void testHomePageOpens() {
         assertEquals(homePage.getHomePageTitle(), "Nimble Approach - Technology consultancy focused on quality");
+        assertEquals(homePage.getHomePageHeading(), "Discover\n" + "what's possible");
     }
 
     @Test

@@ -16,6 +16,7 @@ public class HomePage {
     private By twitterLink = By.className("fa-twitter");
     private By facebookLink = By.className("fa-facebook");
     private By linkedinLink = By.className("fa-linkedin");
+    private By pageHeading = By.cssSelector("h1");
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
@@ -27,6 +28,10 @@ public class HomePage {
 
     public String getHomePageTitle() {
         return driver.getTitle();
+    }
+
+    public String getHomePageHeading() {
+        return driver.findElement(pageHeading).getText();
     }
 
     public WhatWeDoPage clickWhatWeDo() {
