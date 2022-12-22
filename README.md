@@ -5,13 +5,13 @@ This is a demo of writing automated tests on the Nimble website using Java and S
 ## TODO
 
 #### Home page
+- [ ] `testHomePageOpens` - Add find element test
 - [x] `testMenuLinksList`
 - [x] `testContactInfo`
 - [x] `testSocialMediaLinks`
 
 #### What we do page
 - [x] `testWhatWeDoPageOpens`
-- [ ] Add more tests
 
 #### Success stories page
 - [ ] `testSuccessStoriesPageOpens` - Add find element test
@@ -25,7 +25,7 @@ This is a demo of writing automated tests on the Nimble website using Java and S
 #### Careers page
 - [ ] `testCareersPageOpens` - Add find element test
 
-#### Contact us page
+#### Contact us page - DONE
 - [X] `testContactUsPageOpens`
 - [X] `testCompletedContactUsForm`
 - [x] `textInCompleteContactUsForm`

@@ -25,6 +25,10 @@ public class HomePage {
         driver.findElement(By.linkText(linkText)).click();
     }
 
+    public String getHomePageTitle() {
+        return driver.getTitle();
+    }
+
     public WhatWeDoPage clickWhatWeDo() {
         clickLink("What we do");
         return new WhatWeDoPage(driver);

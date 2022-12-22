@@ -9,6 +9,11 @@ import static org.testng.Assert.assertTrue;
 public class HomeTests extends BaseTests {
 
     @Test
+    public void testHomePageOpens() {
+        assertEquals(homePage.getHomePageTitle(), "Nimble Approach - Technology consultancy focused on quality");
+    }
+
+    @Test
     public void testMenuLinksList() {
         assertTrue(homePage.linkIsDisplayed("What we do"), "Error, 'What wo do' link not displayed");
         assertTrue(homePage.linkIsDisplayed("Success Stories"), "Error, 'Success Stories' link not displayed");
