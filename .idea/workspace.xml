@@ -10,6 +10,7 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/aboutnimble/AboutNimbleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/aboutnimble/AboutNimbleTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/blog/BlogsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/blog/BlogsTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/careers/CareersTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/careers/CareersTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/contactus/ContactUsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactus/ContactUsTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/home/HomeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/home/HomeTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/successstories/SuccessStoriesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/successstories/SuccessStoriesTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/whatwedo/WhatWeDoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/whatwedo/WhatWeDoTests.java" afterDir="false" />
