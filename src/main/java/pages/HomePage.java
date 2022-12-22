@@ -35,6 +35,26 @@ public class HomePage {
         return new ContactUsPage(driver);
     }
 
+    public AboutNimblePage clickAboutNimble() {
+        clickLink("About Nimble");
+        return new AboutNimblePage(driver);
+    }
+
+    public BlogPage clickBlog() {
+        clickLink("Blog");
+        return new BlogPage(driver);
+    }
+
+    public CareersPage clickCareers() {
+        clickLink("Careers");
+        return new CareersPage(driver);
+    }
+
+    public SuccessStoriesPage clickSuccessStories() {
+        clickLink("Success Stories");
+        return new SuccessStoriesPage(driver);
+    }
+
     public boolean linkIsDisplayed(String linkText) {
         return driver.findElement(By.linkText(linkText)).isDisplayed();
     }

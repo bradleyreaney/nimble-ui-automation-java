@@ -14,16 +14,16 @@ This is a demo of writing automated tests on the Nimble website using Java and S
 - [ ] Add more tests
 
 #### Success stories page
-- [ ] TODO
+- [ ] `testSuccessStoriesPageOpens` - Add find element test
 
 #### About nimble page
-- [ ] TODO
+- [ ] `testAboutNimblePageOpens` - Add find element test
 
 #### Blog page
-- [ ] TODO
+- [ ] `testBlogPageOpens` - Add find element test
 
 #### Careers page
-- [ ] TODO
+- [ ] `testCareersPageOpens` - Add find element test
 
 #### Contact us page
 - [X] `testContactUsPageOpens`

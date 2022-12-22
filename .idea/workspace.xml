@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e092ede-a577-443b-997a-abf8937781ff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/AboutNimblePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/BlogPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/CareersPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SuccessStoriesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/aboutnimble/AboutNimbleTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/blog/BlogsTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/careers/CareersTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/successstories/SuccessStoriesTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/contactus/ContactUsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactus/ContactUsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,18 +55,55 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ContactUsTests.testCompletedContactUsForm">
-    <configuration name="ContactUsTests" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.SuccessStoriesTests.testSuccessStoriesPageOpens">
+    <configuration name="AboutNimbleTests.testAboutNimblePageOpens" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nimble-ui-automation-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="contactus.*" />
+          <option name="PATTERN" value="aboutnimble.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="contactus" />
-      <option name="MAIN_CLASS_NAME" value="contactus.ContactUsTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="aboutnimble" />
+      <option name="MAIN_CLASS_NAME" value="aboutnimble.AboutNimbleTests" />
+      <option name="METHOD_NAME" value="testAboutNimblePageOpens" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogsTests.testBlogPageOpens" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nimble-ui-automation-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="blog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="blog" />
+      <option name="MAIN_CLASS_NAME" value="blog.BlogsTests" />
+      <option name="METHOD_NAME" value="testBlogPageOpens" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CareersTests.testCareersPageOpens" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nimble-ui-automation-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="careers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="careers" />
+      <option name="MAIN_CLASS_NAME" value="careers.CareersTests" />
+      <option name="METHOD_NAME" value="testCareersPageOpens" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -82,53 +128,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactUsTests.testContactUsPageOpens" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SuccessStoriesTests.testSuccessStoriesPageOpens" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nimble-ui-automation-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="contactus.*" />
+          <option name="PATTERN" value="successstories.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="contactus" />
-      <option name="MAIN_CLASS_NAME" value="contactus.ContactUsTests" />
-      <option name="METHOD_NAME" value="testContactUsPageOpens" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContactUsTests.testIncorrectEmailFormat" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nimble-ui-automation-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="contactus.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="contactus" />
-      <option name="MAIN_CLASS_NAME" value="contactus.ContactUsTests" />
-      <option name="METHOD_NAME" value="testIncorrectEmailFormat" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WhatWeDoTests.testWhatWeDoPageOpens" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nimble-ui-automation-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="whatwedo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="whatwedo" />
-      <option name="MAIN_CLASS_NAME" value="whatwedo.WhatWeDoTests" />
-      <option name="METHOD_NAME" value="testWhatWeDoPageOpens" />
+      <option name="PACKAGE_NAME" value="successstories" />
+      <option name="MAIN_CLASS_NAME" value="successstories.SuccessStoriesTests" />
+      <option name="METHOD_NAME" value="testSuccessStoriesPageOpens" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -138,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SuccessStoriesTests.testSuccessStoriesPageOpens" />
+        <item itemvalue="TestNG.CareersTests.testCareersPageOpens" />
+        <item itemvalue="TestNG.BlogsTests.testBlogPageOpens" />
+        <item itemvalue="TestNG.AboutNimbleTests.testAboutNimblePageOpens" />
         <item itemvalue="TestNG.ContactUsTests.testCompletedContactUsForm" />
-        <item itemvalue="TestNG.WhatWeDoTests.testWhatWeDoPageOpens" />
-        <item itemvalue="TestNG.ContactUsTests" />
-        <item itemvalue="TestNG.ContactUsTests.testContactUsPageOpens" />
-        <item itemvalue="TestNG.ContactUsTests.testIncorrectEmailFormat" />
       </list>
     </recent_temporary>
   </component>
