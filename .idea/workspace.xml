@@ -6,7 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="0e092ede-a577-443b-997a-abf8937781ff" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AboutNimblePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AboutNimblePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BlogPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BlogPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CareersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CareersPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ContactUsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ContactUsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SuccessStoriesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SuccessStoriesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/WhatWeDoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/WhatWeDoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/aboutnimble/AboutNimbleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/aboutnimble/AboutNimbleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/blog/BlogsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/blog/BlogsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/careers/CareersTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/careers/CareersTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/contactus/ContactUsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactus/ContactUsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/successstories/SuccessStoriesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/successstories/SuccessStoriesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/whatwedo/WhatWeDoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/whatwedo/WhatWeDoTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,25 +58,7 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ContactUsTests.testCompletedContactUsForm">
-    <configuration name="CareersTests.testCareersPageOpens" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nimble-ui-automation-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="careers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="careers" />
-      <option name="MAIN_CLASS_NAME" value="careers.CareersTests" />
-      <option name="METHOD_NAME" value="testCareersPageOpens" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.WhatWeDoTests.testWhatWeDoPageOpens">
     <configuration name="ContactUsTests.testCompletedContactUsForm" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nimble-ui-automation-java" />
       <extension name="coverage">
@@ -137,13 +131,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WhatWeDoTests.testWhatWeDoPageOpens" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nimble-ui-automation-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="whatwedo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="whatwedo" />
+      <option name="MAIN_CLASS_NAME" value="whatwedo.WhatWeDoTests" />
+      <option name="METHOD_NAME" value="testWhatWeDoPageOpens" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.WhatWeDoTests.testWhatWeDoPageOpens" />
         <item itemvalue="TestNG.ContactUsTests.testCompletedContactUsForm" />
         <item itemvalue="TestNG.ContactUsTests.testContactUsPageOpens" />
         <item itemvalue="TestNG.HomeTests.testHomePageOpens" />
         <item itemvalue="TestNG.SuccessStoriesTests.testSuccessStoriesPageOpens" />
-        <item itemvalue="TestNG.CareersTests.testCareersPageOpens" />
       </list>
     </recent_temporary>
   </component>

@@ -5,18 +5,18 @@ import org.openqa.selenium.WebDriver;
 
 public class HomePage {
 
-    private WebDriver driver;
-    private By contactEmail = By.cssSelector("a[itemprop='email']");
-    private By contactTelephone = By.cssSelector("span[itemprop='telephone']");
-    private By contactAddress1 = By.className("jetpack-address__address1");
-    private By contactAddress2 = By.className("jetpack-address__address2");
-    private By contactAddress3 = By.className("jetpack-address__address3");
-    private By contactAddressCity = By.className("jetpack-address__city");
-    private By contactAddressPostcode = By.className("jetpack-address__postal");
-    private By twitterLink = By.className("fa-twitter");
-    private By facebookLink = By.className("fa-facebook");
-    private By linkedinLink = By.className("fa-linkedin");
-    private By pageHeading = By.cssSelector("h1");
+    private final WebDriver driver;
+    private final By contactEmail = By.cssSelector("a[itemprop='email']");
+    private final By contactTelephone = By.cssSelector("span[itemprop='telephone']");
+    private final By contactAddress1 = By.className("jetpack-address__address1");
+    private final By contactAddress2 = By.className("jetpack-address__address2");
+    private final By contactAddress3 = By.className("jetpack-address__address3");
+    private final By contactAddressCity = By.className("jetpack-address__city");
+    private final By contactAddressPostcode = By.className("jetpack-address__postal");
+    private final By twitterLink = By.className("fa-twitter");
+    private final By facebookLink = By.className("fa-facebook");
+    private final By linkedinLink = By.className("fa-linkedin");
+    private final By pageHeading = By.cssSelector("h1");
 
     public HomePage(WebDriver driver) {
         this.driver = driver;

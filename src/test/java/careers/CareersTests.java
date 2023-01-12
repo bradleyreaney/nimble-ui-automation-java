@@ -8,10 +8,12 @@ import static org.testng.Assert.*;
 
 public class CareersTests extends BaseTests {
 
+    private final static String CAREERS_NIMBLE_APPROACH = "Careers - Nimble Approach";
+
     @Test
     public void testCareersPageOpens() {
         CareersPage careersPage = homePage.clickCareers();
-        assertEquals(careersPage.getCareersPageTitle(), "Careers - Nimble Approach");
+        assertEquals(careersPage.getCareersPageTitle(), CAREERS_NIMBLE_APPROACH);
     }
 
     @Test

@@ -10,16 +10,16 @@ import java.time.Duration;
 
 public class ContactUsPage {
 
-    private WebDriver driver;
-    private By nameField = By.cssSelector("input[placeholder='Name*']");
-    private By organisationField = By.cssSelector("input[placeholder='Organisation Name']");
-    private By emailField = By.cssSelector("input[placeholder='Company Email*']");
-    private By dropdownArrow = By.className("select2-selection--single");
-    private By dropdownOption = By.xpath("//li[text()='Improve a product or service']");
-    private By dropdownText = By.className("select2-selection__rendered");
-    private By findUsField = By.cssSelector("input[placeholder='How did you find us?']");
-    private By messageField = By.cssSelector("[placeholder='Message*']");
-    private By pageHeading = By.cssSelector("h1");
+    private final WebDriver driver;
+    private final By nameField = By.cssSelector("input[placeholder='Name*']");
+    private final By organisationField = By.cssSelector("input[placeholder='Organisation Name']");
+    private final By emailField = By.cssSelector("input[placeholder='Company Email*']");
+    private final By dropdownArrow = By.className("select2-selection--single");
+    private final By dropdownOption = By.xpath("//li[text()='Improve a product or service']");
+    private final By dropdownText = By.className("select2-selection__rendered");
+    private final By findUsField = By.cssSelector("input[placeholder='How did you find us?']");
+    private final By messageField = By.cssSelector("[placeholder='Message*']");
+    private final By pageHeading = By.cssSelector("h1");
 
     public ContactUsPage(WebDriver driver) {
         this.driver = driver;

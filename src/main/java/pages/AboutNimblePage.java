@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 public class AboutNimblePage {
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public AboutNimblePage(WebDriver driver) {
         this.driver = driver;

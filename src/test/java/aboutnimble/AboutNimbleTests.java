@@ -8,14 +8,16 @@ import static org.testng.Assert.*;
 
 public class AboutNimbleTests extends BaseTests {
 
+    private static final String ABOUT_NIMBLE_NIMBLE_APPROACH = "About Nimble - Nimble Approach";
+
     @Test
     public void testAboutNimblePageOpens() {
         AboutNimblePage aboutNimblePage = homePage.clickAboutNimble();
-        assertEquals(aboutNimblePage.getAboutNimblePageTitle(), "About Nimble - Nimble Approach");
+        assertEquals(aboutNimblePage.getAboutNimblePageTitle(), ABOUT_NIMBLE_NIMBLE_APPROACH);
     }
 
     @Test
-    public void testEveryoneTileHEadings() {
+    public void testEveryoneTileHeadings() {
         //TODO
     }
 

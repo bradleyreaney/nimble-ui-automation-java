@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 public class BlogPage {
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public BlogPage(WebDriver driver) {
         this.driver = driver;

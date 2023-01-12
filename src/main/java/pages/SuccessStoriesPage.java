@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 public class SuccessStoriesPage {
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public SuccessStoriesPage(WebDriver driver) {
         this.driver = driver;

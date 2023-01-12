@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 public class CareersPage {
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public CareersPage(WebDriver driver) {
         this.driver = driver;

@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 
 public class WhatWeDoPage {
 
-    private WebDriver driver;
-    private By whatWeDoText = By.className("vc_custom_1658411741718");
+    private final WebDriver driver;
+    private final By whatWeDoText = By.className("vc_custom_1658411741718");
 
     public WhatWeDoPage(WebDriver driver) {
         this.driver = driver;
