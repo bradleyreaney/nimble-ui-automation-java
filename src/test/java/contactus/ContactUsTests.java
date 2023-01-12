@@ -1,7 +1,6 @@
 package contactus;
 
 import base.BaseTests;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import pages.ContactUsPage;
 
