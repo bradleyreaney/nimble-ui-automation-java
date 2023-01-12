@@ -7,8 +7,6 @@ import pages.ContactUsPage;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-
-
 public class ContactUsTests extends BaseTests {
 
     private static final String CONTACT_US_NIMBLE_APPROACH = "Contact Us - Nimble Approach";
