@@ -7,6 +7,12 @@
     <list default="true" id="0e092ede-a577-443b-997a-abf8937781ff" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/chromedriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ContactUsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ContactUsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/contactus/ContactUsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactus/ContactUsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/home/HomeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/home/HomeTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +44,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/Bradley.Reaney/git/Nimble/nimble-ui-automation-java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -46,7 +52,42 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.WhatWeDoTests.testWhatWeDoPageOpens">
+  <component name="RunManager" selected="TestNG.ContactUsTests.testContactUsPageOpens">
+    <configuration name="BlogsTests.testBlogPageOpens" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nimble-ui-automation-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="blog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="blog" />
+      <option name="MAIN_CLASS_NAME" value="blog.BlogsTests" />
+      <option name="METHOD_NAME" value="testBlogPageOpens" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactUsTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nimble-ui-automation-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="contactus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="contactus" />
+      <option name="MAIN_CLASS_NAME" value="contactus.ContactUsTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ContactUsTests.testCompletedContactUsForm" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nimble-ui-automation-java" />
       <extension name="coverage">
@@ -83,53 +124,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeTests.testHomePageOpens" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactUsTests.testIncorrectEmailFormat" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nimble-ui-automation-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="home.*" />
+          <option name="PATTERN" value="contactus.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="home" />
-      <option name="MAIN_CLASS_NAME" value="home.HomeTests" />
-      <option name="METHOD_NAME" value="testHomePageOpens" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SuccessStoriesTests.testSuccessStoriesPageOpens" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nimble-ui-automation-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="successstories.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="successstories" />
-      <option name="MAIN_CLASS_NAME" value="successstories.SuccessStoriesTests" />
-      <option name="METHOD_NAME" value="testSuccessStoriesPageOpens" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WhatWeDoTests.testWhatWeDoPageOpens" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nimble-ui-automation-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="whatwedo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="whatwedo" />
-      <option name="MAIN_CLASS_NAME" value="whatwedo.WhatWeDoTests" />
-      <option name="METHOD_NAME" value="testWhatWeDoPageOpens" />
+      <option name="PACKAGE_NAME" value="contactus" />
+      <option name="MAIN_CLASS_NAME" value="contactus.ContactUsTests" />
+      <option name="METHOD_NAME" value="testIncorrectEmailFormat" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -139,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.WhatWeDoTests.testWhatWeDoPageOpens" />
-        <item itemvalue="TestNG.ContactUsTests.testCompletedContactUsForm" />
         <item itemvalue="TestNG.ContactUsTests.testContactUsPageOpens" />
-        <item itemvalue="TestNG.HomeTests.testHomePageOpens" />
-        <item itemvalue="TestNG.SuccessStoriesTests.testSuccessStoriesPageOpens" />
+        <item itemvalue="TestNG.ContactUsTests" />
+        <item itemvalue="TestNG.ContactUsTests.testCompletedContactUsForm" />
+        <item itemvalue="TestNG.BlogsTests.testBlogPageOpens" />
+        <item itemvalue="TestNG.ContactUsTests.testIncorrectEmailFormat" />
       </list>
     </recent_temporary>
   </component>

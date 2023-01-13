@@ -1,5 +1,6 @@
 package base;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -13,20 +14,18 @@ public class BaseTests {
 
     @BeforeClass
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
-        ChromeOptions options = new ChromeOptions();
-        // options.addArguments("--headless");
-        options.addArguments("start-maximized");
-        driver = new ChromeDriver(options);
+        WebDriverManager.chromedriver().setup();
     }
 
     @BeforeMethod
     public void goHome() {
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.get("https://nimbleapproach.com/");
         homePage = new HomePage(driver);
     }
 
-    @AfterClass
+    @AfterMethod
     public void tearDown() {
         driver.quit();
     }

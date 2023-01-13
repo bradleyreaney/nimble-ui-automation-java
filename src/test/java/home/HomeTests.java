@@ -8,19 +8,36 @@ import static org.testng.Assert.assertTrue;
 
 public class HomeTests extends BaseTests {
 
+    final private static String HOME_PAGE_TITLE = "Nimble Approach - Technology consultancy focused on quality";
+    final private static String HOME_PAGE_HEADING = "Discover\n" + "what's possible";
+    final private static String WHAT_WE_DO_LINK_TEXT = "What we do";
+    final private static String SUCCESS_STORIES_LINK_TEXT = "Success Stories";
+    final private static String ABOUT_NIMBLE_LINK_TEXT = "About Nimble";
+    final private static String BLOG_LINK_TEXT = "Blog";
+    final private static String CAREERS_LINK_TEXT = "Careers";
+    final private static String CONTACT_EMAIL = "info@nimbleapproach.com";
+    final private static String CONTACT_TELEPHONE = "+44) 0 114 345 0540";
+    final private static String CONTACT_ADDRESS_1 = "Nimble HQ";
+    final private static String CONTACT_ADDRESS_2 = "Floor 8, Balm Green Wing";
+    final private static String CONTACT_ADDRESS_3 = "Fountain Precinct";
+    final private static String CONTACT_ADDRESS_CITY = "Sheffield";
+    final private static String CONTACT_ADDRESS_POSTCODE = "S1 2JA";
+//    final private static String
+//    final private static String
+
     @Test
     public void testHomePageOpens() {
-        assertEquals(homePage.getHomePageTitle(), "Nimble Approach - Technology consultancy focused on quality");
-        assertEquals(homePage.getHomePageHeading(), "Discover\n" + "what's possible");
+        assertEquals(homePage.getHomePageTitle(), HOME_PAGE_TITLE);
+        assertEquals(homePage.getHomePageHeading(), HOME_PAGE_HEADING);
     }
 
     @Test
     public void testMenuLinksList() {
-        assertTrue(homePage.linkIsDisplayed("What we do"), "Error, 'What wo do' link not displayed");
-        assertTrue(homePage.linkIsDisplayed("Success Stories"), "Error, 'Success Stories' link not displayed");
-        assertTrue(homePage.linkIsDisplayed("About Nimble"), "Error, 'About Nimble' link not displayed");
-        assertTrue(homePage.linkIsDisplayed("Blog"), "Error, 'Blog' link not displayed");
-        assertTrue(homePage.linkIsDisplayed("Careers"), "Error, 'Careers' link not displayed");
+        assertTrue(homePage.linkIsDisplayed(WHAT_WE_DO_LINK_TEXT));
+        assertTrue(homePage.linkIsDisplayed(SUCCESS_STORIES_LINK_TEXT));
+        assertTrue(homePage.linkIsDisplayed(ABOUT_NIMBLE_LINK_TEXT));
+        assertTrue(homePage.linkIsDisplayed(BLOG_LINK_TEXT));
+        assertTrue(homePage.linkIsDisplayed(CAREERS_LINK_TEXT));
     }
 
     @Test
@@ -30,19 +47,19 @@ public class HomeTests extends BaseTests {
 
     @Test
     public void testContactInfo() {
-        assertEquals(homePage.getContactEmail(), "info@nimbleapproach.com", "Error, Contact eMail incorrect");
-        assertEquals(homePage.getContactTelephone(), "+44) 0 114 345 0540", "Error, Contact telephone incorrect");
-        assertEquals(homePage.getContactAddress1(), "Nimble HQ", "Error, Contact address 1 incorrect");
-        assertEquals(homePage.getContactAddress2(), "Floor 8, Balm Green Wing", "Error, Contact address 2 incorrect");
-        assertEquals(homePage.getContactAddress3(), "Fountain Precinct", "Error, Contact address 3 incorrect");
-        assertEquals(homePage.getContactAddressCity(), "Sheffield", "Error, Contact address city incorrect");
-        assertEquals(homePage.getContactAddressPostcode(), "S1 2JA", "Error, Contact address postcode incorrect");
+        assertEquals(homePage.getContactEmail(), CONTACT_EMAIL);
+        assertEquals(homePage.getContactTelephone(), CONTACT_TELEPHONE);
+        assertEquals(homePage.getContactAddress1(), CONTACT_ADDRESS_1);
+        assertEquals(homePage.getContactAddress2(), CONTACT_ADDRESS_2);
+        assertEquals(homePage.getContactAddress3(), CONTACT_ADDRESS_3);
+        assertEquals(homePage.getContactAddressCity(), CONTACT_ADDRESS_CITY);
+        assertEquals(homePage.getContactAddressPostcode(), CONTACT_ADDRESS_POSTCODE);
     }
 
     @Test
     public void testSocialMediaLinks() {
-        assertTrue(homePage.isTwitterLinkDisplayed(), "Error, Twitter link not displayed");
-        assertTrue(homePage.isFacebookLinkDisplayed(), "Error, Facebook link not displayed");
-        assertTrue(homePage.isLinkedinLinkDisplayed(), "Error, Linkedin link not displayed");
+        assertTrue(homePage.isTwitterLinkDisplayed());
+        assertTrue(homePage.isFacebookLinkDisplayed());
+        assertTrue(homePage.isLinkedinLinkDisplayed());
     }
 }

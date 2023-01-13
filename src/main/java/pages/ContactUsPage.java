@@ -20,6 +20,9 @@ public class ContactUsPage {
     private final By findUsField = By.cssSelector("input[placeholder='How did you find us?']");
     private final By messageField = By.cssSelector("[placeholder='Message*']");
     private final By pageHeading = By.cssSelector("h1");
+    private final By submitButton = By.className("wpcf7-submit");
+    private final By incompleteFormErrorMessage = By.className("wpcf7-response-output");
+    private final By emailFormatErrorMessage = By.className("wpcf7-not-valid-tip");
 
     public ContactUsPage(WebDriver driver) {
         this.driver = driver;
@@ -75,25 +78,25 @@ public class ContactUsPage {
     }
 
     public void clickSubmitButton() {
-        WebElement submitButton = driver.findElement(By.className("wpcf7-submit"));
+        WebElement submitButtonWebElement = driver.findElement(submitButton);
         JavascriptExecutor jse = (JavascriptExecutor) driver;
-        jse.executeScript("arguments[0].scrollIntoView();", submitButton);
-        new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(submitButton));
-        jse.executeScript("arguments[0].click();", submitButton);
+        jse.executeScript("arguments[0].scrollIntoView();", submitButtonWebElement);
+        new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(submitButtonWebElement));
+        jse.executeScript("arguments[0].click();", submitButtonWebElement);
     }
 
     public boolean incompleteFormErrorMessageIsDisplayed() {
-        WebElement incompleteFormErrorMessage = driver.findElement(By.className("wpcf7-response-output"));
+        WebElement incompleteFormErrorMessageWebElement = driver.findElement(incompleteFormErrorMessage);
         return new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.textToBePresentInElement(
-                        incompleteFormErrorMessage, "One or more fields have an error. Please check and try again."));
+                        incompleteFormErrorMessageWebElement, "One or more fields have an error. Please check and try again."));
     }
 
     public boolean emailFormatErrorMessageIsDisplayed() {
-        WebElement emailFormatErrorMessage = driver.findElement(By.className("wpcf7-not-valid-tip"));
+        WebElement emailFormatErrorMessageWebElement = driver.findElement(emailFormatErrorMessage);
         return new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.textToBePresentInElement(
-                        emailFormatErrorMessage, "The e-mail address entered is invalid."));
+                        emailFormatErrorMessageWebElement, "The e-mail address entered is invalid."));
     }
 
     public String getContactUsPageTitle() {
@@ -102,5 +105,20 @@ public class ContactUsPage {
 
     public String getContactUsPageHeading() {
         return driver.findElement(pageHeading).getText();
+    }
+
+    public void fillInContactForm(String name, String org, String email, String findUs, String message) {
+        this.setName(name);
+        this.setOrganisation(org);
+        this.setEmail(email);
+        this.selectDropdownOption();
+        this.setFindUs(findUs);
+        this.setMessage(message);
+    }
+
+    public void fillInContactForm_IncorrectEmail(String name, String email, String message) {
+        this.setName(name);
+        this.setEmail(email);
+        this.setMessage(message);
     }
 }

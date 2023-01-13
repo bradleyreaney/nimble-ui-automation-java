@@ -19,7 +19,6 @@ public class ContactUsTests extends BaseTests {
     private static final String MESSAGE = "This is a message";
     private static final String INCORRECT_EMAIL = "wrongemailformat.com";
 
-
     @Test
     public void testContactUsPageOpens() {
         ContactUsPage contactUsPage = homePage.clickContactUs();
@@ -30,12 +29,7 @@ public class ContactUsTests extends BaseTests {
     @Test
     public void testCompletedContactUsForm() {
         ContactUsPage contactUsPage = homePage.clickContactUs();
-        contactUsPage.setName(NAME);
-        contactUsPage.setOrganisation(ORGANISATION);
-        contactUsPage.setEmail(EMAIL);
-        contactUsPage.selectDropdownOption();
-        contactUsPage.setFindUs(FIND_US);
-        contactUsPage.setMessage(MESSAGE);
+        contactUsPage.fillInContactForm(NAME, ORGANISATION, EMAIL, FIND_US, MESSAGE);
         assertEquals(contactUsPage.getNameSet(), NAME);
         assertEquals(contactUsPage.getOrganisationSet(), ORGANISATION);
         assertEquals(contactUsPage.getEmailSet(), EMAIL);
@@ -54,9 +48,7 @@ public class ContactUsTests extends BaseTests {
     @Test
     public void testIncorrectEmailFormat() {
         ContactUsPage contactUsPage = homePage.clickContactUs();
-        contactUsPage.setName(NAME);
-        contactUsPage.setEmail(INCORRECT_EMAIL);
-        contactUsPage.setMessage(MESSAGE);
+        contactUsPage.fillInContactForm_IncorrectEmail(NAME, INCORRECT_EMAIL, MESSAGE);
         contactUsPage.clickSubmitButton();
         assertTrue(contactUsPage.emailFormatErrorMessageIsDisplayed());
     }
