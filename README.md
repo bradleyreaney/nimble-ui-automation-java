@@ -44,6 +44,7 @@ This is a demo of writing automated tests on the Nimble website using Java and S
 
 #### Other
 - [ ] Fix any tests that don't work in headless mode (List TBC)
+- [ ] Get surefire working to run all / groups of tests
 
 #### Comments from TestCOP
 - [x] I'd avoid using xpath as much as you can (e.g. in the ContactUsPage) as they're the most brittle. I suspect you've done it there because there's no good alternative
