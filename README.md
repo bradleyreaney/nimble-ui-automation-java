@@ -43,8 +43,10 @@ This is a demo of writing automated tests on the Nimble website using Java and S
 - [x] `testIncorrectEmailFormat`
 
 #### Other
-- [ ] Fix any tests that don't work in headless mode (List TBC)
+- [x] Fix any tests that don't work in headless mode (List TBC)
+  - Basically think this can't be done
 - [ ] Get surefire working to run all / groups of tests
+  - Got all tests running. Just working on the groups using JUnit tags/categories/IDK
 
 #### Comments from TestCOP
 - [x] I'd avoid using xpath as much as you can (e.g. in the ContactUsPage) as they're the most brittle. I suspect you've done it there because there's no good alternative

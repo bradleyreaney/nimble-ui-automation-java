@@ -1,11 +1,13 @@
 package blog;
 
 import base.BaseTests;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
 import pages.BlogPage;
 
-import static org.testng.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@Tag("Blogs")
 public class BlogsTests extends BaseTests {
 
     private static final String BLOG_NIMBLE_APPROACH = "Blog - Nimble Approach";

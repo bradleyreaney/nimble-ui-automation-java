@@ -1,10 +1,10 @@
 package home;
 
 import base.BaseTests;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class HomeTests extends BaseTests {
 
@@ -22,8 +22,6 @@ public class HomeTests extends BaseTests {
     final private static String CONTACT_ADDRESS_3 = "Fountain Precinct";
     final private static String CONTACT_ADDRESS_CITY = "Sheffield";
     final private static String CONTACT_ADDRESS_POSTCODE = "S1 2JA";
-//    final private static String
-//    final private static String
 
     @Test
     public void testHomePageOpens() {

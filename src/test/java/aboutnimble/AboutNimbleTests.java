@@ -1,11 +1,13 @@
 package aboutnimble;
 
 import base.BaseTests;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
 import pages.AboutNimblePage;
 
-import static org.testng.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@Tag("AboutNimble")
 public class AboutNimbleTests extends BaseTests {
 
     private static final String ABOUT_NIMBLE_NIMBLE_APPROACH = "About Nimble - Nimble Approach";

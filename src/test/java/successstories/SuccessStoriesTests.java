@@ -1,10 +1,10 @@
 package successstories;
 
 import base.BaseTests;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 import pages.SuccessStoriesPage;
 
-import static org.testng.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SuccessStoriesTests extends BaseTests {
 
